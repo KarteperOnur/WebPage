@@ -1,0 +1,117 @@
+<head>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-grid.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-reboot.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-utilities.min.css" rel="stylesheet" />
+    <style type="text/css">
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        .sidebar {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-right: 1px solid #dee2e6;
+        }
+
+        .ultext {
+            color: white;
+        }
+
+        .main-content {
+            flex-grow: 1;
+            padding-left: 8%;
+            padding-top: 15%;
+            text-align: center;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .footer {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div style="position:relative">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-body" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-4 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="position-relative main-content">
+        <!-- Left Sidebar -->
+        <div class="position-absolute top-0 start-0 bg-dark sidebar" style="width: 200px; height: 100%;">
+            <!-- Sidebar content goes here -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ultext">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="position-absolute top-0 start-200" style="left: 42%; padding-top: 15%">
+            <!-- Main content goes here -->
+            <h1>Main Content</h1>
+            <p>This is the main content area.</p>
+            <button class="btn btn-primary">Tamam</button>
+            <button class="btn btn-danger">Iptal</button>
+        </div>
+
+        <!-- Right Sidebar -->
+        <div class="position-absolute top-0 end-0 bg-dark sidebar" style="width: 200px; height: 100%;">
+            <!-- Sidebar content goes here -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ultext">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div style="position:relative">
+        <footer class="bg-primary text-white text-center py-3 footer">
+            <p>&copy; 2024 Your Company. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
